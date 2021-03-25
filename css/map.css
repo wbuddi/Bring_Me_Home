@@ -1,6 +1,6 @@
 #map {
-    height: 600px;
-    width: 100%;
+    height: 400px;
+    width: 50%;
 }
 
 html,
@@ -10,28 +10,24 @@ body {
     padding: 0;
 }
 
-.my-container {
-    margin-left: 50px;
-    background: rgb(170, 170, 170);
-    background-repeat: no-repeat;
+.map-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
 }
 
-.my-card {
-    border-radius: 1rem;
-    background-color: whitesmoke;
-    box-shadow: 2px 2px gray;
-    border: 0.5px solid grey;
+#map {
+    height: 600px;
+    width: 100%;
 }
 
-.my-card-row {
-    height: 120px;
+.card-container{
+    box-shadow: 4px 4px 8px rgba(204, 119, 28, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.8) !important;
+    border-radius: 16px;
+    padding: 8px;
 }
 
-.my-img {
-    height: 100px;
-    width: 100px;
-}
-
-.my-card-col {
-    font-size: small;
+.item-image {
+    border-radius: 8px;
 }

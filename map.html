@@ -2,6 +2,35 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-687Z9XPYXY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-687Z9XPYXY');
+    </script>
+    <!-- Hotjar Tracking Code for https://agalexei.github.io/group-project-3/index.html -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 2282471,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bring Me Home</title>
@@ -19,8 +48,8 @@
 <body>
     <header class="my-5">
         <nav class="navbar navbar-expand-lg navbar-default fixed-top">
-            <a class="navbar-brand" href="#">
-                <img class="logo" src="images/color_logo_White_logo_Transparent.png" alt="logo" style="max-width:80px">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="images/color_logo_orange_logo_Transparent_v2.png" alt="logo" style="max-width:80px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -52,14 +81,15 @@
         </nav>
     </header>
 
-    <div class="container my-container mb-5">
+    <main>
+    <div class="container my-container mb-5 map-container">
         <div class="row my-row justify-content-center">
-            <div class="col-4 my-col">
+            <div class="col-lg-4 col-md-4 col-12">
 
-                <div class="container my-card mb-4">
+                <div class="container my-card mb-4 card-container">
                     <div class="row my-card-row pt-2 pb-2">
                         <div class="col-4 my-card-col align-items-center">
-                            <img src="images/chaminar.jpg" class="my-img">
+                            <img src="./images/chaminar.jpg" class="img-fluid item-image">
                         </div>
                         <div class="col-8 my-card-col">
                             <h5>Chaminar</h5>
@@ -68,10 +98,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="container my-card mb-4">
+                <div class="container my-card mb-4 card-container">
                     <div class="row my-card-row pt-2 pb-2">
                         <div class="col-4 my-card-col align-items-center">
-                            <img src="images/Willo & Co.jpg" class="my-img">
+                            <img src="./images/Willo & Co.jpg" class="img-fluid item-image">
                         </div>
                         <div class="col-8 my-card-col">
                             <h5>Willo & Co</h5>
@@ -80,10 +110,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="container my-card mb-4">
+                <div class="container my-card mb-4 card-container">
                     <div class="row my-card-row pt-2 pb-2">
                         <div class="col-4 my-card-col align-items-center">
-                            <img src="images/Avist Cafe.jpg" class="my-img">
+                            <img src="./images/Avist Cafe.jpg" class="img-fluid item-image">
                         </div>
                         <div class="col-8 my-card-col">
                             <h5>Avist Cafe</h5>
@@ -92,10 +122,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="container my-card mb-4">
+                <div class="container my-card mb-4 card-container">
                     <div class="row my-card-row pt-2 pb-2">
                         <div class="col-4 my-card-col align-items-center">
-                            <img src="images/Guzman y Gomez.jpg" class="my-img">
+                            <img src="./images/Guzman y Gomez.jpg" class="img-fluid item-image">
                         </div>
                         <div class="col-8 my-card-col">
                             <h5>Guzman y Gomez</h5>
@@ -107,11 +137,12 @@
             </div>
 
 
-            <div class="col-8 map-container my-col">
+            <div class="col-lg-8 col-md-8 col-12 container-fluid">
                 <div id="map"></div>
             </div>
         </div>
     </div>
+</main>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

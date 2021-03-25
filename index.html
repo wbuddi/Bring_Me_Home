@@ -2,6 +2,36 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-687Z9XPYXY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-687Z9XPYXY');
+    </script>
+    <!-- Hotjar Tracking Code for https://agalexei.github.io/group-project-3/index.html -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 2282471,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bring Me Home</title>
@@ -53,14 +83,16 @@
 
     <!--header-->
     <div class="mid">
-        <img class="embed-responsive img-fluid hero-header" src="./images/landing_background_V2.png" alt="background">
+        <img class="embed-responsive img-fluid hero-header" src="images/iso_landingpage_Background-min.png" alt="background">
         <div class="hero text-left">
             <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
                 <h2 class="display-4 font-weight-bold">Hungry and want to make an impact?</h2>
             </div>
             <div class="search  col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
                 <input type="text" class="search-input" placeholder="Enter your postcode" name="">
-                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                <a href="map.html">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                </a>
             </div>
         </div>
     </div>
@@ -69,29 +101,32 @@
     <main>
 
         <section id="history" class="history py-5">
-            <div class="row text-center container my-5 mx-auto">
-                <h2 class="text-center text-light mx-auto">Discover</h2>
+            <div class="row text-center my-5 mx-auto">
+                <h1 class="text-center text-light mx-auto col-lg-4">Discover</h1>
+                <div class="col-lg-4">
+                    <a class="text-right text-light"><u>View All</u></a>
+                    <a><img src="images/left-arrow.svg" alt="left arrow" style="max-height:24px" class="img-fluid align-items-right arrow-icons"></a>
+                    <a><img src="images/right-arrow.svg" alt="left arrow" style="max-height:24px" class="img-fluid align-items-right arrow-icons"></a>
+                </div>
             </div>
-            <div class="container align-items-center mx-auto">
-                <div class="row align-items-center my-5 mx-auto">
-                    <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5 align-items-center">
-                        <img class="img-fluid" src="images/Rectangle -1@2x.png" alt="option">
-                    </div>
-                    <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5">
-                        <img class="img-fluid" src="images/Rectangle -2@2x.png" alt="option">
-                    </div>
-                    <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5">
-                        <img class="img-fluid" src="images/Rectangle -3@2x.png" alt="option">
-                    </div>
-                    <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5">
-                        <img class="img-fluid" src="images/Rectangle -4@2x.png" alt="option">
-                    </div>
-                    <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5">
-                        <img class="img-fluid" src="images/Rectangle 5@2x.png" alt="option">
-                    </div>
-                    <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5">
-                        <img class="img-fluid" src="images/Rectangle 6@2x.png" alt="option">
-                    </div>
+            <div class="row align-items-center my-5 mx-auto">
+                <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5 align-items-center">
+                    <img class="img-fluid discover-icons" src="images/Rectangle -1@2x.png" alt="option">
+                </div>
+                <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5">
+                    <img class="img-fluid discover-icons" src="images/Rectangle -2@2x.png" alt="option">
+                </div>
+                <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5">
+                    <img class="img-fluid discover-icons" src="images/Rectangle -3@2x.png" alt="option">
+                </div>
+                <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5">
+                    <img class="img-fluid discover-icons" src="images/Rectangle -4@2x.png" alt="option">
+                </div>
+                <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5">
+                    <img class="img-fluid discover-icons" src="images/Rectangle 5@2x.png" alt="option">
+                </div>
+                <div class="img col-lg-2 col-md-6 col-12 w-50 pt-5 pb-5">
+                    <img class="img-fluid discover-icons" src="images/Rectangle 6@2x.png" alt="option">
                 </div>
             </div>
         </section>
